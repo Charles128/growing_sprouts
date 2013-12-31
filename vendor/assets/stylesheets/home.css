@@ -5,6 +5,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-color: #3498db;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +29,6 @@ hr {
 .address-bar {
   display: none;
 }
-
 
 .navbar-brand {
   text-transform: uppercase;
