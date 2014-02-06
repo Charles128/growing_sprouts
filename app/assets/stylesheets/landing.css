@@ -1,0 +1,83 @@
+html {
+  background-color: #eee;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+#head-nav {
+  background-color: #374348;
+  height: 6em;
+  margin-bottom: 2.5em;
+}
+
+#head-nav {
+  position: relative;
+  box-shadow: 0 -1px 0 #3e4b51 inset, 0 0 15px #384348 inset, 0 1px 1px #bbb;
+}
+
+#nav-container {
+  position: absolute;
+  top: 37%;
+}
+
+#nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-links li {
+  font-size: 1.2em;
+  display: inline;
+  padding-left: 1.5em;
+}
+
+#nav-links li a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+#bee {
+  width: 40%;
+  height: 50%;
+  float: right;
+  margin-top: -6.5em;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  #bee {
+    margin-top: -4.5em;
+    margin-right: -.5em;
+  }
+}
+
+@media (max-width: 570px) {
+  #bee {
+    margin-top: -4em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 452px) {
+  #bee {
+    display: none;
+  }
+}
+
+.page-content {
+  background-color: white;
+  padding: 3em;
+  margin-bottom: 2em;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#intro-pic {
+  width: 40%;
+  max-width: 391px;
+  float: left;
+  padding-right: .5em;
+}

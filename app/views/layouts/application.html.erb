@@ -2,13 +2,30 @@
 <html>
 <head>
   <title>GrowingSprouts</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id='head-nav'>
+    <div id='nav-container'>
+      <ul id='nav-links'>
+        <li><a>Growing Sprouts</a></li>
+        <li><a>Tour</a></li>
+        <li><a>Childcare</a></li>
+        <li><a>Rates</a></li>
+        <li><a>Testimonials</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
