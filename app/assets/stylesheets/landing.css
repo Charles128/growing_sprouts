@@ -49,12 +49,22 @@ html {
 
 @media (max-width: 991px) {
   #bee {
-    margin-top: -4em;
+    margin-top: -4.5em;
+    margin-right: -.5em;
   }
 }
 
-#logo {
+@media (max-width: 570px) {
+  #bee {
+    margin-top: -4em;
+    margin-right: 1em;
+  }
+}
 
+@media (max-width: 452px) {
+  #bee {
+    display: none;
+  }
 }
 
 .page-content {
