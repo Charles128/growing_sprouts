@@ -1,0 +1,15 @@
+.form-control {
+  margin-bottom: 2em;
+}
+
+#input-first-name, #input-last-name {
+  min-width: 35%;
+}
+
+#input-email {
+  min-width: 50%;
+}
+
+#input-message {
+  min-width: 100%;
+}
