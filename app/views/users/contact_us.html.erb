@@ -6,15 +6,13 @@
   <h3>Email</h3>
   <p>Please fill out the form below if you have any questions about programming and enrollment. We Will get back to to as soon as possible.</p>
 
-  <form id="contact-us-form">
-    <input type="text" class="form-control" id="input-first-name" placeholder="Firs Name">
-    <input type="text" class="form-control" id="input-last-name" placeholder="Last Name">
-    <input type="text" class="form-control" id="input-email" placeholder="Email">
+  <form id="contact-us-form" method="POST">
+    <input type="text" class="form-control" name="first_name" id="input-first-name" placeholder="Firs Name">
+    <input type="text" class="form-control" name="last_name" id="input-last-name" placeholder="Last Name">
+    <input type="text" class="form-control" name="email" id="input-email" placeholder="Email">
 
-    <textarea class="form-control" rows="5" id="input-message" placeholder="Message"></textarea>
+    <textarea class="form-control" name="message" rows="5" id="input-message" placeholder="Message"></textarea>
 
     <input type="submit" class="btn btn-primary"></input>
   </form>
-
-
 </div>
