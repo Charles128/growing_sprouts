@@ -6,13 +6,11 @@
   <h3>Email</h3>
   <p>Please fill out the form below if you have any questions about programming and enrollment. We Will get back to to as soon as possible.</p>
 
-  <form id="contact-us-form" method="POST">
-    <input type="text" class="form-control" name="first_name" id="input-first-name" placeholder="Firs Name">
-    <input type="text" class="form-control" name="last_name" id="input-last-name" placeholder="Last Name">
-    <input type="text" class="form-control" name="email" id="input-email" placeholder="Email">
-
-    <textarea class="form-control" name="message" rows="5" id="input-message" placeholder="Message"></textarea>
-
+  <form id="contact-us-form" data-remote="true" method="POST">
+    <input type="text" class="form-control" name="first_name" id="input-first-name" placeholder="First Name" required>
+    <input type="text" class="form-control" name="last_name" id="input-last-name" placeholder="Last Name" required>
+    <input type="email" class="form-control" name="email" id="input-email" placeholder="Email" required>
+    <textarea class="form-control" name="message" rows="5" id="input-message" placeholder="Message" required></textarea>
     <input type="submit" class="btn btn-primary"></input>
   </form>
 </div>
