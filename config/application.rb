@@ -18,6 +18,8 @@ end
 module GrowingSprouts
   class Application < Rails::Application
 
+    config.assets.initialize_on_precompile = false
+
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
