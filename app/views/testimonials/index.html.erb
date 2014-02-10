@@ -1,0 +1,26 @@
+<div class="page-content">
+  <h1>Guest Book</h1>
+  <h3>Here's what parents are saying about Growing Sprouts:</h3>
+
+  <br>
+
+  <% @all_testimonials.each do |testimonial| %>
+    <div>
+      <h3><%= testimonial.username %></h3>
+      <p><%= testimonial.comment %></p>
+    </div>
+  <% end %>
+
+  <hr>
+
+  <div id="testimonial-submission">
+    <h4>Feel free to leave a comment if our services have been to your satisfaction. A valid email address is required for verification purposes only and will not be seen or published.</h4>
+
+    <form id="testimonial-submission-form" method="POST" action="testimonials#create">
+      <input type="text" class="form-control" name="username" id="input-first-name" placeholder="Name" required>
+      <input type="email" class="form-control" name="email" id="input-email" placeholder="Email" required>
+      <textarea class="form-control" name="comment" rows="5" id="input-message" placeholder="Comment" required></textarea>
+      <input type="submit" class="btn btn-primary"></input>
+    </form>
+  </div>
+</div>

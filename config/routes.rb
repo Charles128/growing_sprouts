@@ -3,4 +3,5 @@ GrowingSprouts::Application.routes.draw do
   get 'tour' => 'users#tour'
   get 'contact_us' => 'users#contact_us'
   post 'contact_us' => 'emails#contact_us'
+  resources :testimonials, only: [:index, :create]
 end
