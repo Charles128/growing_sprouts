@@ -2,9 +2,11 @@
 <h1>Childcare Options</h1>
 
   <ul class="nav nav-tabs childcare-options-list" style="margin-bottom: 15px;">
-    <li class="active"><a href="#home" data-toggle="tab">Overview</a></li>
-    <li><a href="#profile" data-toggle="tab">Summer Camp</a></li>
-    <li><a href="#profile" data-toggle="tab">Preschool</a></li>
-    <li><a href="#profile" data-toggle="tab">Enrichment Programs</a></li>
+    <li class="active"><a href="childcare?option=overview" data-toggle="tab">Overview</a></li>
+    <li><a href="childcare?option=summer_camp" data-toggle="tab">Summer Camp</a></li>
+    <li><a href="childcare?option=preschool" data-toggle="tab">Preschool</a></li>
+    <li><a href="childcare?option=enrichment" data-toggle="tab">Enrichment Programs</a></li>
   </ul>
+
+  <%= render @childcare_option %>
 </div>

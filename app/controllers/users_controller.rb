@@ -4,4 +4,8 @@ class UsersController < ApplicationController
 
   def contact_us
   end
+
+  def childcare
+    @childcare_option = params[:option]
+  end
 end
