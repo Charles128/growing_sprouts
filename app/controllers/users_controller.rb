@@ -6,6 +6,5 @@
   end
 
   def childcare
-    @childcare_option = params[:option]
   end
 end
