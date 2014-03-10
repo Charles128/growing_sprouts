@@ -4,8 +4,6 @@ gem 'rails', '3.2.14'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'pg'
 gem 'jquery-rails'
-gem 'less-rails'
-gem 'therubyracer'
 
 group :development, :test do
   gem 'better_errors'
